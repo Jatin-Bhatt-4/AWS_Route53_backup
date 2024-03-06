@@ -1,5 +1,3 @@
-**Inspiration for this script came from the need to automate Route53 backups for disaster recovery and configuration management purposes.**
-
 # Route53 Backup to S3
 This Python script is designed to backup Route53 hosted zones and their resource record sets to an Amazon S3 bucket. It ensures that older backups are deleted from the S3 bucket to manage storage efficiently. Each backup file is named with a timestamp appended to the hosted zone name for identification and versioning purposes.
 
