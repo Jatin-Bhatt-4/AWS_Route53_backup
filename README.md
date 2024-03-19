@@ -1,8 +1,9 @@
 # Route53 Backup to S3 Bucket
 
 ## Overview
-This Python script is designed to backup Route53 hosted zones and their resource record sets to an Amazon S3 bucket. It ensures that older backups are deleted from the S3 bucket to manage storage efficiently. Each backup file is named with a timestamp appended to the hosted zone name for identification and versioning purposes.
+The Python program **DNS-backup-python3.py** is designed to backup Route53 hosted zones and their resource record sets to an Amazon S3 bucket. It ensures that older backups are deleted from the S3 bucket to manage storage efficiently. Each backup file is named with a timestamp appended to the hosted zone name for identification and versioning purposes.
 
+Now , the python program **DNS-restore-python3.py** can be used to restore from the backup files created using previous program.
 ## Requirements
 * Python 3.x
 * **boto3** library
@@ -19,6 +20,8 @@ This Python script is designed to backup Route53 hosted zones and their resource
 ## Usage
 Run the following command inside the folder where program is placed-
 **/usr/bin/python3 DNS-backup-python3.py**
+OR
+**/usr/bin/python3 DNS-restore-python3.py**
 
 ## Author
 - Created by Jatin Bhatt
